@@ -408,8 +408,127 @@ a { text-decoration: none; color: inherit; }
 
 /* ── ANIMACIÓN DE ENTRADA ─────────────────────────────── */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
+ /* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f5f7fb;
+  color: #333;
+}
+
+/* HEADER */
+.site-header {
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  color: white;
+  padding: 20px;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brand-sub {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* MENU */
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* CONTENEDOR */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* TARJETAS (POSTS) */
+.post-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+/* TITULOS */
+.post-title {
+  color: #4f46e5;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.post-body {
+  font-size: 14px;
+  color: #555;
+}
+
+/* BOTON */
+a {
+  color: #9333ea;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* CONTACT */
+.contact {
+  background: linear-gradient(90deg, #9333ea, #4f46e5);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-btn {
+  display: inline-block;
+  background: white;
+  color: #4f46e5;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-btn:hover {
+  background: #ddd;
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  color: white;
+  margin-top: 20px;
+} from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 .hero-content { animation: fadeUp 0.7s ease both; }
 .post-card    { animation: fadeUp 0.5s ease both; }
+
